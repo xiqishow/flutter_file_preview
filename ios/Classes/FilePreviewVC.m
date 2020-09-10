@@ -16,7 +16,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self setNeedsStatusBarAppearanceUpdate];
-  UIImage *backIcon = [UIImage imageWithContentsOfFile:self.backImgPath];
+  UIImage *backIcon = [UIImage imageNamed:@"ic_back"];
   UIButton *backBtn = [[UIButton alloc] initWithFrame: CGRectMake(0, 0, 10, 20)];
   [backBtn setImage:backIcon forState:UIControlStateNormal];
   [backBtn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
